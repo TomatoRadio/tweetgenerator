@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8">
+	<title>Tweet Roulette</title>
+    <link rel="stylesheet" type="text/css" href="style.css" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <audio src="tick.ogg" id="tick"></audio>
+    <audio src="bell.ogg" id="bell"></audio>
+    <audio src="applause.ogg" id="applause"></audio>
+    <div class="wrapper">
+        <div class="flexrow" style="align-items: stretch; align-content: center;">
+            <img src="pfp.jpg" alt="Profile Photo" class="pfp">
+            <div class="flexcol" style="align-items: flex-start; align-self: center;">
+                <strong>traitor joe</strong>
+                <p class="graytext">@phoebe_bridgers</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p id="tweet" class="tweet">
+                <span id="tweet1">hot people</span>
+                 who 
+                <span id="tweet2">eat croissants</span>
+                 are 
+                <span id="tweet3">dangerous</span>
+            </p>
+        </div>
+        <hr>
+        <div class="flexrow" style="align-items: center; align-content: flex-end;align-self: center;">
+            <button type="button" id="button" onclick="generateTweet()">Generate Tweet</button>
+            <button type="button" id="sound" onclick="toggleSound()" value="off" style="display: none;">Enable Sound</button>
+            <p class="graytext">By: TomatoRadio</p>
+        </div>
+        <hr>
+        <em class="graytext">Due to being randomly constructed, some sentences can be potentially offensive.</em>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
