@@ -1,3 +1,9 @@
+@media(max-width: 60em) {
+    .wrapper {
+        width: 50em;
+    }
+}
+
 body {
     background-color: black;
     color: white;
@@ -16,7 +22,7 @@ body {
     line-height: 0.5em;
     background-color: rgba(10,10,10,1);
     padding: 2em;
-    width: 50em;
+    width: 90vw;
     border-radius: 1em;
 }
 
